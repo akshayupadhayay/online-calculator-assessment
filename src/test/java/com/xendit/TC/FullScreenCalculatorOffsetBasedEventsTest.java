@@ -1,24 +1,22 @@
 package com.xendit.TC;
 
 import com.xendit.base.BasePage;
-import com.xendit.pages.FullScreenCalculator;
+import com.xendit.pages.FullScreenCalculatorOffsetBasedEvents;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
-public class FullScreenCalculatorTest extends BasePage {
+public class FullScreenCalculatorOffsetBasedEventsTest extends BasePage {
 
-    FullScreenCalculator calculator;
+    FullScreenCalculatorOffsetBasedEvents calculator;
 
-    public FullScreenCalculatorTest(){
+    public FullScreenCalculatorOffsetBasedEventsTest(){
         super();
     }
 
-    @BeforeTest
+    @BeforeClass
     public void setUp(){
         initDriver();
-        calculator = new FullScreenCalculator();
+        calculator = new FullScreenCalculatorOffsetBasedEvents();
     }
 
     @Test(priority = 1)
@@ -117,7 +115,7 @@ public class FullScreenCalculatorTest extends BasePage {
         calculator.clearResult();
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDown(){
         driver.close();
         driver.quit();

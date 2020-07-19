@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="Calculator Test Suite" parallel="tests" thread-count="1">
 <listeners>
     <listener class-name="reporting.Listener"/>
 </listeners>
     <parameter name="browser" value="chrome"/>
-    <test verbose="2" preserve-order="true" name="Online-Calculator">
+    <test name="Online-Calculator-Offset-Based">
         <classes>
-            <class name="com.xendit.TC.FullScreenCalculatorTest">
+            <class name="com.xendit.TC.FullScreenCalculatorOffsetBasedEventsTest">
+                <methods>
+                    <include name="TC1_calculatorLaunch"/>
+                    <include name="TC2_calculatorVisibility"/>
+                    <include name="TC3_getTitle"/>
+                    <include name="TC4_subtraction"/>
+                    <include name="TC5_subtraction"/>
+                    <include name="TC6_addition"/>
+                    <include name="TC7_addition"/>
+                    <include name="TC8_addition"/>
+                    <include name="TC9_division"/>
+                    <include name="TC10_division"/>
+                    <include name="TC11_division"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Online-Calculator-Key-Based">
+        <classes>
+            <class name="com.xendit.TC.FullScreenCalculatorKeyBasedEventsTest">
                 <methods>
                     <include name="TC1_calculatorLaunch"/>
                     <include name="TC2_calculatorVisibility"/>

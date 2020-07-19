@@ -13,11 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.xendit.util.utils;
 
-public class FullScreenCalculator extends BasePage{
+public class FullScreenCalculatorKeyBasedEvents extends BasePage{
     /**
      * Logger for info logs, WebDriverWait for Frame & canvas to load and Action API to move to buttons and click
      */
-    Logger logger = LogManager.getLogger(FullScreenCalculator.class.getName());
+    Logger logger = LogManager.getLogger(FullScreenCalculatorOffsetBasedEvents.class.getName());
     WebDriverWait wait;
     Actions click;
 
@@ -35,7 +35,8 @@ public class FullScreenCalculator extends BasePage{
     /**
      * Initialize WebDriver and WebDriverWait
      */
-    public FullScreenCalculator(){
+    public FullScreenCalculatorKeyBasedEvents(){
+        logger.info("Driver initialized");
         PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver,utils.EXPLICIT_WAIT);
     }
@@ -65,6 +66,7 @@ public class FullScreenCalculator extends BasePage{
     public boolean calculatorLaunch(){
             String calculatorUrl = prop.getProperty("onlineCalculatorUrl");
         try {
+            logger.info("Online calculator is launched");
             driver.get(calculatorUrl);
             return driver.getCurrentUrl().equals(prop.getProperty("onlineCalculatorUrl"));
         } catch (Exception e) {
@@ -78,6 +80,7 @@ public class FullScreenCalculator extends BasePage{
      * @return calculator DOM visibility status
      */
     public boolean calculatorVisibility(){
+        logger.info("Checking visibility of frame and canvas");
         wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(calculatorFrame));
         wait.until(ExpectedConditions.elementToBeClickable(calculatorCanvas));
         return calculatorCanvas.isDisplayed();
@@ -87,7 +90,7 @@ public class FullScreenCalculator extends BasePage{
      * Validate the title of the webpage
      * @return webpage title status
      */
-    public String getTitle(){ return driver.getTitle(); }
+    public String getTitle(){ logger.info("Get page title"); return driver.getTitle(); }
 
 
     /**
@@ -95,19 +98,20 @@ public class FullScreenCalculator extends BasePage{
      * @param keyPressed    Is a the number key pressed by user either through mouse clicks or through numpad
      */
     public void doPositiveCalculations(int keyPressed) {
+        logger.info("Waiting for key click event");
         click = new Actions(driver);
         switch (keyPressed) {
 
-                case 9: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0, -(345 / 6) * 1).click().build().perform();
-                break; case 6: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0, (345 / 6) * 1).click().build().perform();
-                break; case 3: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0,(345/6)*3).click().build().perform();
-                break; case 7: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, -(345 / 6) * 1).click().build().perform();
-                break; case 4: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 1).click().build().perform();
-                break; case 1: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 3).click().build().perform();
-                break; case 0: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 5).click().build().perform();
-                break; case 8: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, -(345 / 6) * 1).click().build().perform();
-                break; case 5: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, (345 / 6) * 1).click().build().perform();
-                break; case 2: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, (345 / 6) * 3).click().build().perform();
+                case 9: click.sendKeys(Keys.NUMPAD9).build().perform();
+                break; case 6: click.sendKeys(Keys.NUMPAD6).build().perform();
+                break; case 3: click.sendKeys(Keys.NUMPAD3).build().perform();
+                break; case 7: click.sendKeys(Keys.NUMPAD7).build().perform();
+                break; case 4: click.sendKeys(Keys.NUMPAD4).build().perform();
+                break; case 1: click.sendKeys(Keys.NUMPAD1).build().perform();
+                break; case 0: click.sendKeys(Keys.NUMPAD0).build().perform();
+                break; case 8: click.sendKeys(Keys.NUMPAD8).build().perform();
+                break; case 5: click.sendKeys(Keys.NUMPAD5).build().perform();
+                break; case 2: click.sendKeys(Keys.NUMPAD2).build().perform();
         }
     }
 
@@ -116,6 +120,7 @@ public class FullScreenCalculator extends BasePage{
      * @param keyPressed    Is a the number key pressed by user either through mouse clicks or through numpad
      */
     public void doNegativeCalculations(String negativeValue, int keyPressed) {
+        logger.info("Waiting for key click event");
         click = new Actions(driver);
 
         switch (negativeValue) {
@@ -125,16 +130,16 @@ public class FullScreenCalculator extends BasePage{
 
         switch (keyPressed) {
 
-                case 9: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0, -(345 / 6) * 1).click().build().perform();
-                break; case 6: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0, (345 / 6) * 1).click().build().perform();
-                break; case 3: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0,(345/6)*3).click().build().perform();
-                break; case 7: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, -(345 / 6) * 1).click().build().perform();
-                break; case 4: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 1).click().build().perform();
-                break; case 1: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 3).click().build().perform();
-                break; case 0: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 5).click().build().perform();
-                break; case 8: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, -(345 / 6) * 1).click().build().perform();
-                break; case 5: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, (345 / 6) * 1).click().build().perform();
-                break; case 2: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, (345 / 6) * 3).click().build().perform();
+                case 9: click.sendKeys(Keys.NUMPAD9).click().build().perform();
+                break; case 6: click.sendKeys(Keys.NUMPAD6).click().build().perform();
+                break; case 3: click.sendKeys(Keys.NUMPAD3).click().build().perform();
+                break; case 7: click.sendKeys(Keys.NUMPAD7).click().build().perform();
+                break; case 4: click.sendKeys(Keys.NUMPAD4).click().build().perform();
+                break; case 1: click.sendKeys(Keys.NUMPAD1).click().build().perform();
+                break; case 0: click.sendKeys(Keys.NUMPAD0).click().build().perform();
+                break; case 8: click.sendKeys(Keys.NUMPAD8).click().build().perform();
+                break; case 5: click.sendKeys(Keys.NUMPAD5).click().build().perform();
+                break; case 2: click.sendKeys(Keys.NUMPAD2).click().build().perform();
         }
 
 
@@ -145,12 +150,13 @@ public class FullScreenCalculator extends BasePage{
      * @param operation Is a the function key pressed by user either through mouse clicks or through numpad
      */
     public void selectFunctionality(String operation) {
+        logger.info("Waiting for operation key event");
 		click = new Actions(driver);
 		switch (operation) {
 
-		    case "divide": click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 2, -(345 / 6) * 1).click().build().perform();
-			break; case "add": click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 2, (345 / 6) * 4).click().build().perform();
-			break; case "subtract": click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 2,(345 / 6) * 3).click().build().perform();
+		    case "divide": click.sendKeys(Keys.DIVIDE).click().build().perform();
+			break; case "add": click.sendKeys(Keys.ADD).click().build().perform();
+			break; case "subtract": click.sendKeys(Keys.SUBTRACT).click().build().perform();
 			break;
 		}
 
@@ -163,6 +169,7 @@ public class FullScreenCalculator extends BasePage{
      * @param numTwo      Is a the number key pressed by user either through mouse clicks or through numpad
      */
 	public void performArithmetic(String operation, int numOne, int numTwo) {
+	    logger.info("Performing arithmetic operation");
 		logger.info("First Number Pressed : " + numOne);
 		if (numOne < 9)
 			doPositiveCalculations(numOne);
@@ -188,6 +195,7 @@ public class FullScreenCalculator extends BasePage{
      * @param numTwo        Is a the number key pressed by user either through mouse clicks or through numpad
      */
 	public void performNegativeArithmetic(String operation, String negativeValue,  int numOne, int numTwo) {
+	    logger.info("Performing arithmetic operation");
 		logger.info("First Number Pressed : " + numOne);
 		if (numOne < 9)
 			doNegativeCalculations(negativeValue, numOne);
@@ -210,6 +218,7 @@ public class FullScreenCalculator extends BasePage{
      * @param number    Any number which is not single digit
      */
 	private void multipleDigits(int number) {
+	    logger.info("Performing arithmetic operation when input value is not single digit");
 		if (number > 0) {
 			multipleDigits(number / 10);
 			doPositiveCalculations(number % 10);
@@ -220,6 +229,7 @@ public class FullScreenCalculator extends BasePage{
      * FinaL result of calculations performed by clicking on Equals(=) sign and then clearing the result
      */
 	public void computeResult() {
+	    logger.info("Performing arithmetic operation to evaluate results");
 		click = new Actions(driver);
 		// Equals '='
         waitForElement(calculatorCanvas, 1000);
@@ -230,6 +240,7 @@ public class FullScreenCalculator extends BasePage{
      * Clear result console
      */
 	public void clearResult() {
+	    logger.info("Clearing result console");
 	    click = new Actions(driver);
 		// CE
         waitForElement(calculatorCanvas, 1000);
@@ -237,3 +248,4 @@ public class FullScreenCalculator extends BasePage{
     }
 
 }
+
