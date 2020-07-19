@@ -114,3 +114,83 @@
 2020-07-19 23:54:52 INFO  FullScreenCalculator:137 - First Number Pressed : 123
 2020-07-19 23:54:53 INFO  FullScreenCalculator:144 - Operation: divide
 2020-07-19 23:54:53 INFO  FullScreenCalculator:146 - Second Number Pressed : 2
+2020-07-20 00:16:34 INFO  FullScreenCalculator:137 - First Number Pressed : 3
+2020-07-20 00:16:35 INFO  FullScreenCalculator:144 - Operation: subtract
+2020-07-20 00:16:35 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-20 00:16:37 INFO  FullScreenCalculator:137 - First Number Pressed : -3
+2020-07-20 00:16:37 INFO  FullScreenCalculator:144 - Operation: subtract
+2020-07-20 00:16:37 INFO  FullScreenCalculator:146 - Second Number Pressed : -1
+2020-07-20 00:16:38 INFO  FullScreenCalculator:137 - First Number Pressed : 999999999
+2020-07-20 00:16:42 INFO  FullScreenCalculator:144 - Operation: add
+2020-07-20 00:16:42 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-20 00:16:44 INFO  FullScreenCalculator:137 - First Number Pressed : 999999998
+2020-07-20 00:16:48 INFO  FullScreenCalculator:144 - Operation: add
+2020-07-20 00:16:48 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-20 00:16:50 INFO  FullScreenCalculator:137 - First Number Pressed : 1
+2020-07-20 00:16:50 INFO  FullScreenCalculator:144 - Operation: add
+2020-07-20 00:16:51 INFO  FullScreenCalculator:146 - Second Number Pressed : -999999999
+2020-07-20 00:16:52 INFO  FullScreenCalculator:137 - First Number Pressed : 123
+2020-07-20 00:16:53 INFO  FullScreenCalculator:144 - Operation: divide
+2020-07-20 00:16:53 INFO  FullScreenCalculator:146 - Second Number Pressed : 2
+2020-07-20 00:16:55 INFO  FullScreenCalculator:137 - First Number Pressed : 123
+2020-07-20 00:16:56 INFO  FullScreenCalculator:144 - Operation: divide
+2020-07-20 00:16:57 INFO  FullScreenCalculator:146 - Second Number Pressed : 0
+2020-07-20 00:16:58 INFO  FullScreenCalculator:137 - First Number Pressed : 123
+2020-07-20 00:17:00 INFO  FullScreenCalculator:144 - Operation: divide
+2020-07-20 00:17:00 INFO  FullScreenCalculator:146 - Second Number Pressed : 2
+2020-07-20 00:17:52 INFO  FullScreenCalculator:137 - First Number Pressed : 3
+2020-07-20 00:17:53 INFO  FullScreenCalculator:144 - Operation: subtract
+2020-07-20 00:17:53 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-20 00:17:55 INFO  FullScreenCalculator:137 - First Number Pressed : -3
+2020-07-20 00:17:55 INFO  FullScreenCalculator:144 - Operation: subtract
+2020-07-20 00:17:55 INFO  FullScreenCalculator:146 - Second Number Pressed : -1
+2020-07-20 00:17:57 INFO  FullScreenCalculator:137 - First Number Pressed : 999999999
+2020-07-20 00:18:00 INFO  FullScreenCalculator:144 - Operation: add
+2020-07-20 00:18:00 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-20 00:18:02 INFO  FullScreenCalculator:137 - First Number Pressed : 999999998
+2020-07-20 00:18:05 INFO  FullScreenCalculator:144 - Operation: add
+2020-07-20 00:18:06 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-20 00:18:08 INFO  FullScreenCalculator:137 - First Number Pressed : 1
+2020-07-20 00:18:08 INFO  FullScreenCalculator:144 - Operation: add
+2020-07-20 00:18:08 INFO  FullScreenCalculator:146 - Second Number Pressed : -999999999
+2020-07-20 00:18:10 INFO  FullScreenCalculator:137 - First Number Pressed : 123
+2020-07-20 00:18:11 INFO  FullScreenCalculator:144 - Operation: divide
+2020-07-20 00:18:11 INFO  FullScreenCalculator:146 - Second Number Pressed : 2
+2020-07-20 00:18:13 INFO  FullScreenCalculator:137 - First Number Pressed : 123
+2020-07-20 00:18:14 INFO  FullScreenCalculator:144 - Operation: divide
+2020-07-20 00:18:14 INFO  FullScreenCalculator:146 - Second Number Pressed : 0
+2020-07-20 00:18:16 INFO  FullScreenCalculator:137 - First Number Pressed : 0
+2020-07-20 00:18:16 INFO  FullScreenCalculator:144 - Operation: divide
+2020-07-20 00:18:17 INFO  FullScreenCalculator:146 - Second Number Pressed : 2
+2020-07-20 00:19:08 INFO  FullScreenCalculator:137 - First Number Pressed : 3
+2020-07-20 00:19:09 INFO  FullScreenCalculator:144 - Operation: subtract
+2020-07-20 00:19:09 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-20 00:19:39 INFO  FullScreenCalculator:137 - First Number Pressed : -3
+2020-07-20 00:19:39 INFO  FullScreenCalculator:144 - Operation: subtract
+2020-07-20 00:20:26 INFO  FullScreenCalculator:137 - First Number Pressed : 3
+2020-07-20 00:20:26 INFO  FullScreenCalculator:144 - Operation: subtract
+2020-07-20 00:20:26 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-20 00:35:09 INFO  FullScreenCalculator:166 - First Number Pressed : 3
+2020-07-20 00:35:09 INFO  FullScreenCalculator:173 - Operation: subtract
+2020-07-20 00:35:09 INFO  FullScreenCalculator:175 - Second Number Pressed : 1
+2020-07-20 00:35:11 INFO  FullScreenCalculator:191 - First Number Pressed : 3
+2020-07-20 00:35:11 INFO  FullScreenCalculator:198 - Operation: subtract
+2020-07-20 00:35:12 INFO  FullScreenCalculator:200 - Second Number Pressed : -1
+2020-07-20 00:35:13 INFO  FullScreenCalculator:166 - First Number Pressed : 999999999
+2020-07-20 00:35:16 INFO  FullScreenCalculator:173 - Operation: add
+2020-07-20 00:35:17 INFO  FullScreenCalculator:175 - Second Number Pressed : 1
+2020-07-20 00:35:19 INFO  FullScreenCalculator:166 - First Number Pressed : 999999998
+2020-07-20 00:35:22 INFO  FullScreenCalculator:173 - Operation: add
+2020-07-20 00:35:22 INFO  FullScreenCalculator:175 - Second Number Pressed : 1
+2020-07-20 00:35:24 INFO  FullScreenCalculator:191 - First Number Pressed : -999999999
+2020-07-20 00:35:24 INFO  FullScreenCalculator:198 - Operation: add
+2020-07-20 00:35:24 INFO  FullScreenCalculator:200 - Second Number Pressed : 1
+2020-07-20 00:35:26 INFO  FullScreenCalculator:166 - First Number Pressed : 123
+2020-07-20 00:35:27 INFO  FullScreenCalculator:173 - Operation: divide
+2020-07-20 00:35:28 INFO  FullScreenCalculator:175 - Second Number Pressed : 2
+2020-07-20 00:35:29 INFO  FullScreenCalculator:166 - First Number Pressed : 123
+2020-07-20 00:35:30 INFO  FullScreenCalculator:173 - Operation: divide
+2020-07-20 00:35:31 INFO  FullScreenCalculator:175 - Second Number Pressed : 0
+2020-07-20 00:35:32 INFO  FullScreenCalculator:166 - First Number Pressed : 0
+2020-07-20 00:35:33 INFO  FullScreenCalculator:173 - Operation: divide
+2020-07-20 00:35:33 INFO  FullScreenCalculator:175 - Second Number Pressed : 2

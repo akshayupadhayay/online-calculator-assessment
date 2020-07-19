@@ -91,10 +91,10 @@ public class FullScreenCalculator extends BasePage{
 
 
     /**
-     * Switch case for num keys desired calculations
+     * Switch case for num keys desired positive value calculations
      * @param keyPressed    Is a the number key pressed by user either through mouse clicks or through numpad
      */
-    public void doCalculations(int keyPressed) {
+    public void doPositiveCalculations(int keyPressed) {
         click = new Actions(driver);
         switch (keyPressed) {
 
@@ -109,6 +109,35 @@ public class FullScreenCalculator extends BasePage{
                 break; case 5: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, (345 / 6) * 1).click().build().perform();
                 break; case 2: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, (345 / 6) * 3).click().build().perform();
         }
+    }
+
+    /**
+     * Switch case for num keys desired negative value calculations
+     * @param keyPressed    Is a the number key pressed by user either through mouse clicks or through numpad
+     */
+    public void doNegativeCalculations(String negativeValue, int keyPressed) {
+        click = new Actions(driver);
+
+        switch (negativeValue) {
+			case "subtract": click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 2,(345 / 6) * 3).click().build().perform();
+			break;
+		}
+
+        switch (keyPressed) {
+
+                case 9: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0, -(345 / 6) * 1).click().build().perform();
+                break; case 6: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0, (345 / 6) * 1).click().build().perform();
+                break; case 3: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(0,(345/6)*3).click().build().perform();
+                break; case 7: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, -(345 / 6) * 1).click().build().perform();
+                break; case 4: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 1).click().build().perform();
+                break; case 1: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 3).click().build().perform();
+                break; case 0: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 4, (345 / 6) * 5).click().build().perform();
+                break; case 8: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, -(345 / 6) * 1).click().build().perform();
+                break; case 5: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, (345 / 6) * 1).click().build().perform();
+                break; case 2: click.moveToElement(calculatorCanvas, 0, 0).moveByOffset(-(267 / 5) * 2, (345 / 6) * 3).click().build().perform();
+        }
+
+
     }
 
     /**
@@ -136,7 +165,7 @@ public class FullScreenCalculator extends BasePage{
 	public void performArithmetic(String operation, int numOne, int numTwo) {
 		logger.info("First Number Pressed : " + numOne);
 		if (numOne < 9)
-			doCalculations(numOne);
+			doPositiveCalculations(numOne);
 		else {
 			multipleDigits(numOne);
 		}
@@ -145,7 +174,32 @@ public class FullScreenCalculator extends BasePage{
 		selectFunctionality(operation);
 		logger.info("Second Number Pressed : " + numTwo);
 		if (numTwo < 9)
-			doCalculations(numTwo);
+			doPositiveCalculations(numTwo);
+		else {
+			multipleDigits(numTwo);
+		}
+	}
+
+	/**
+     * Function to validate single digit operation or multiple digits
+     * @param operation     Is a the function key pressed by user either through mouse clicks or through numpad
+     * @param negativeValue Denotes the negative value of the number
+     * @param numOne        Is a the number key pressed by user either through mouse clicks or through numpad
+     * @param numTwo        Is a the number key pressed by user either through mouse clicks or through numpad
+     */
+	public void performNegativeArithmetic(String operation, String negativeValue,  int numOne, int numTwo) {
+		logger.info("First Number Pressed : " + numOne);
+		if (numOne < 9)
+			doNegativeCalculations(negativeValue, numOne);
+		else {
+			multipleDigits(numOne);
+		}
+
+		logger.info("Operation: " + operation);
+		selectFunctionality(operation);
+		logger.info("Second Number Pressed : " + numTwo);
+		if (numTwo < 9)
+			doNegativeCalculations(negativeValue, numTwo);
 		else {
 			multipleDigits(numTwo);
 		}
@@ -158,7 +212,7 @@ public class FullScreenCalculator extends BasePage{
 	private void multipleDigits(int number) {
 		if (number > 0) {
 			multipleDigits(number / 10);
-			doCalculations(number % 10);
+			doPositiveCalculations(number % 10);
 		}
 	}
 
@@ -170,10 +224,13 @@ public class FullScreenCalculator extends BasePage{
 		// Equals '='
         waitForElement(calculatorCanvas, 1000);
 		click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 4, (345 / 6) * 4).click().build().perform();
+	}
+
+	public void clearResult() {
+	    click = new Actions(driver);
 		// CE
         waitForElement(calculatorCanvas, 1000);
         click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 4, -(345 / 6) * 2).click().build().perform();
-
-	}
+    }
 
 }
