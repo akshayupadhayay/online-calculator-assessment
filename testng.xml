@@ -13,8 +13,13 @@
                     <include name="TC2_calculatorVisibility"/>
                     <include name="TC3_getTitle"/>
                     <include name="TC4_subtraction"/>
-                    <include name="TC5_addition"/>
-                    <include name="TC6_division"/>
+                    <include name="TC5_subtraction"/>
+                    <include name="TC6_addition"/>
+                    <include name="TC7_addition"/>
+                    <include name="TC8_addition"/>
+                    <include name="TC9_division"/>
+                    <include name="TC10_division"/>
+                    <include name="TC11_division"/>
                 </methods>
             </class>
         </classes>

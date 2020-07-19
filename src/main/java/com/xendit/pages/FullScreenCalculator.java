@@ -226,6 +226,9 @@ public class FullScreenCalculator extends BasePage{
 		click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 4, (345 / 6) * 4).click().build().perform();
 	}
 
+    /**
+     * Clear result console
+     */
 	public void clearResult() {
 	    click = new Actions(driver);
 		// CE

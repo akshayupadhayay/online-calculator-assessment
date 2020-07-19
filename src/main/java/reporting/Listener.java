@@ -42,14 +42,14 @@ public class Listener extends BasePage implements ITestListener {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formatter = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
         String methodName = result.getName();
-        if(result.isSuccess()){
-            File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            try{
-                String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath()+"/src/main/java/failureScreenshots";
-                File destFile = new File((String)reportDirectory+"/"+methodName+"_"+formatter.format(calendar.getTime())+".png");
-                FileUtils.copyFile(scrFile,destFile);
-                Reporter.log("<a href='"+destFile.getAbsolutePath()+"'><image src='"+destFile.getAbsolutePath()+"'height='100' width='100'/> </a>");
-            }catch(Exception e){
+        if (!result.isSuccess()) {
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            try {
+                String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/src/main/java/failureScreenshots";
+                File destFile = new File((String) reportDirectory + "/" + methodName + "_" + formatter.format(calendar.getTime()) + ".png");
+                FileUtils.copyFile(scrFile, destFile);
+                Reporter.log("<a href='" + destFile.getAbsolutePath() + "'><image src='" + destFile.getAbsolutePath() + "'height='100' width='100'/> </a>");
+            } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
         }
@@ -73,6 +73,5 @@ public class Listener extends BasePage implements ITestListener {
 
     @Override
     public void onFinish(ITestContext context) {
-
     }
 }
