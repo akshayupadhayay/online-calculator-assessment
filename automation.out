@@ -1,0 +1,116 @@
+2020-07-19 19:21:02 INFO  FullScreenCalculator:134 - Argument 1 : 3
+2020-07-19 19:21:03 INFO  FullScreenCalculator:141 - Operation : subtract
+2020-07-19 19:21:03 INFO  FullScreenCalculator:143 - Argument 2 : 2
+2020-07-19 20:08:35 INFO  FullScreenCalculator:134 - Argument 1 : 3
+2020-07-19 20:08:36 INFO  FullScreenCalculator:141 - Operation : subtract
+2020-07-19 20:08:36 INFO  FullScreenCalculator:143 - Argument 2 : 2
+2020-07-19 20:14:53 INFO  FullScreenCalculator:134 - Argument 1 : 3
+2020-07-19 20:14:54 INFO  FullScreenCalculator:141 - Operation : subtract
+2020-07-19 20:14:54 INFO  FullScreenCalculator:143 - Argument 2 : 2
+2020-07-19 20:16:01 INFO  FullScreenCalculator:134 - Argument 1 : -4
+2020-07-19 20:16:01 INFO  FullScreenCalculator:141 - Operation : subtract
+2020-07-19 20:16:02 INFO  FullScreenCalculator:143 - Argument 2 : 2
+2020-07-19 20:17:57 INFO  FullScreenCalculator:134 - Argument 1 : -4
+2020-07-19 20:17:57 INFO  FullScreenCalculator:141 - Operation : subtract
+2020-07-19 20:17:57 INFO  FullScreenCalculator:143 - Argument 2 : 2
+2020-07-19 20:26:29 INFO  FullScreenCalculator:79 - Argument 1 : 44
+2020-07-19 20:26:30 INFO  FullScreenCalculator:86 - Operation : subtract
+2020-07-19 20:26:30 INFO  FullScreenCalculator:88 - Argument 2 : 2
+2020-07-19 20:29:08 INFO  FullScreenCalculator:79 - Argument 1 : 30
+2020-07-19 20:29:09 INFO  FullScreenCalculator:86 - Operation : subtract
+2020-07-19 20:29:09 INFO  FullScreenCalculator:88 - Argument 2 : 2
+2020-07-19 20:30:44 INFO  FullScreenCalculator:79 - Argument 1 : 30
+2020-07-19 20:32:23 INFO  FullScreenCalculator:86 - Operation : subtract
+2020-07-19 20:32:23 INFO  FullScreenCalculator:88 - Argument 2 : 2
+2020-07-19 20:39:10 INFO  FullScreenCalculator:82 - Argument 1 : 30
+2020-07-19 20:39:10 INFO  FullScreenCalculator:89 - Operation : subtract
+2020-07-19 20:39:11 INFO  FullScreenCalculator:91 - Argument 2 : 2
+2020-07-19 20:41:37 INFO  FullScreenCalculator:82 - Argument 1 : 2
+2020-07-19 20:42:08 INFO  FullScreenCalculator:89 - Operation : subtract
+2020-07-19 20:42:09 INFO  FullScreenCalculator:91 - Argument 2 : 1
+2020-07-19 20:53:38 INFO  FullScreenCalculator:82 - Argument 1 : 2
+2020-07-19 20:53:38 INFO  FullScreenCalculator:89 - Operation : subtract
+2020-07-19 20:53:38 INFO  FullScreenCalculator:91 - Argument 2 : 1
+2020-07-19 20:59:18 INFO  FullScreenCalculator:81 - Argument 1 : 2
+2020-07-19 20:59:18 INFO  FullScreenCalculator:88 - Operation : subtract
+2020-07-19 20:59:19 INFO  FullScreenCalculator:90 - Argument 2 : 1
+2020-07-19 21:05:01 INFO  FullScreenCalculator:86 - Argument 1 : 2
+2020-07-19 21:05:01 INFO  FullScreenCalculator:93 - Operation : subtract
+2020-07-19 21:05:02 INFO  FullScreenCalculator:95 - Argument 2 : 1
+2020-07-19 22:35:17 INFO  FullScreenCalculator:91 - Argument 1 : 2
+2020-07-19 22:35:17 INFO  FullScreenCalculator:98 - Operation : subtract
+2020-07-19 22:35:18 INFO  FullScreenCalculator:100 - Argument 2 : 1
+2020-07-19 22:36:20 INFO  FullScreenCalculator:91 - Argument 1 : 2
+2020-07-19 22:36:20 INFO  FullScreenCalculator:98 - Operation : subtract
+2020-07-19 22:36:21 INFO  FullScreenCalculator:100 - Argument 2 : 1
+2020-07-19 22:37:35 INFO  FullScreenCalculator:95 - Argument 1 : 2
+2020-07-19 22:37:35 INFO  FullScreenCalculator:102 - Operation : subtract
+2020-07-19 22:37:36 INFO  FullScreenCalculator:104 - Argument 2 : 1
+2020-07-19 22:51:32 INFO  FullScreenCalculator:95 - Argument 1 : 3
+2020-07-19 22:51:32 INFO  FullScreenCalculator:102 - Operation : subtract
+2020-07-19 22:51:33 INFO  FullScreenCalculator:104 - Argument 2 : 1
+2020-07-19 22:53:05 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 22:53:05 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 22:53:06 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 22:59:11 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 22:59:12 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 22:59:12 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:00:22 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:00:22 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 23:00:23 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:10:38 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:10:39 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 23:10:39 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:12:08 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:12:09 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 23:12:09 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:14:23 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:14:23 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 23:14:24 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:20:47 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:20:48 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 23:20:48 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:20:50 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:20:50 INFO  FullScreenCalculator:85 - Operation : add
+2020-07-19 23:20:50 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:22:55 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:22:56 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 23:22:56 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:22:58 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:22:58 INFO  FullScreenCalculator:85 - Operation : add
+2020-07-19 23:22:58 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:30:15 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:30:16 INFO  FullScreenCalculator:85 - Operation : subtract
+2020-07-19 23:30:16 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:30:18 INFO  FullScreenCalculator:78 - Argument 1 : 3
+2020-07-19 23:30:18 INFO  FullScreenCalculator:85 - Operation : add
+2020-07-19 23:30:18 INFO  FullScreenCalculator:87 - Argument 2 : 1
+2020-07-19 23:30:20 INFO  FullScreenCalculator:78 - Argument 1 : 123
+2020-07-19 23:30:21 INFO  FullScreenCalculator:85 - Operation : divide
+2020-07-19 23:35:25 INFO  FullScreenCalculator:95 - Argument 1 : 3
+2020-07-19 23:35:26 INFO  FullScreenCalculator:102 - Operation : subtract
+2020-07-19 23:35:26 INFO  FullScreenCalculator:104 - Argument 2 : 1
+2020-07-19 23:35:28 INFO  FullScreenCalculator:95 - Argument 1 : 3
+2020-07-19 23:35:28 INFO  FullScreenCalculator:102 - Operation : add
+2020-07-19 23:35:29 INFO  FullScreenCalculator:104 - Argument 2 : 1
+2020-07-19 23:35:30 INFO  FullScreenCalculator:95 - Argument 1 : 123
+2020-07-19 23:35:32 INFO  FullScreenCalculator:102 - Operation : divide
+2020-07-19 23:35:32 INFO  FullScreenCalculator:104 - Argument 2 : 2
+2020-07-19 23:40:42 INFO  FullScreenCalculator:103 - Argument 1 : 3
+2020-07-19 23:40:42 INFO  FullScreenCalculator:110 - Operation : subtract
+2020-07-19 23:40:42 INFO  FullScreenCalculator:112 - Argument 2 : 1
+2020-07-19 23:40:44 INFO  FullScreenCalculator:103 - Argument 1 : 3
+2020-07-19 23:40:45 INFO  FullScreenCalculator:110 - Operation : add
+2020-07-19 23:40:45 INFO  FullScreenCalculator:112 - Argument 2 : 1
+2020-07-19 23:40:47 INFO  FullScreenCalculator:103 - Argument 1 : 123
+2020-07-19 23:40:48 INFO  FullScreenCalculator:110 - Operation : divide
+2020-07-19 23:40:48 INFO  FullScreenCalculator:112 - Argument 2 : 2
+2020-07-19 23:54:47 INFO  FullScreenCalculator:137 - First Number Pressed : 3
+2020-07-19 23:54:47 INFO  FullScreenCalculator:144 - Operation: subtract
+2020-07-19 23:54:48 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-19 23:54:49 INFO  FullScreenCalculator:137 - First Number Pressed : 3
+2020-07-19 23:54:50 INFO  FullScreenCalculator:144 - Operation: add
+2020-07-19 23:54:50 INFO  FullScreenCalculator:146 - Second Number Pressed : 1
+2020-07-19 23:54:52 INFO  FullScreenCalculator:137 - First Number Pressed : 123
+2020-07-19 23:54:53 INFO  FullScreenCalculator:144 - Operation: divide
+2020-07-19 23:54:53 INFO  FullScreenCalculator:146 - Second Number Pressed : 2
