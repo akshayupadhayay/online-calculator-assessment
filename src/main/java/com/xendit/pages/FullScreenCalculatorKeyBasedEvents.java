@@ -233,7 +233,7 @@ public class FullScreenCalculatorKeyBasedEvents extends BasePage{
 		click = new Actions(driver);
 		// Equals '='
         waitForElement(calculatorCanvas, 1000);
-		click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 4, (345 / 6) * 4).click().build().perform();
+		click.sendKeys(Keys.EQUALS).click().build().perform();
 	}
 
     /**
@@ -244,7 +244,7 @@ public class FullScreenCalculatorKeyBasedEvents extends BasePage{
 	    click = new Actions(driver);
 		// CE
         waitForElement(calculatorCanvas, 1000);
-        click.moveToElement(calculatorCanvas, 0, 0).moveByOffset((267 / 5) * 4, -(345 / 6) * 2).click().build().perform();
+        click.sendKeys(Keys.SHIFT, "C").click().build().perform();
     }
 
 }
