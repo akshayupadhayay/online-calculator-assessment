@@ -4,7 +4,7 @@
 [![Github All Releases](https://img.shields.io/github/downloads/akshayupadhayay/online-calculator-assessment/total.svg)]()
 ![coverage](https://img.shields.io/badge/coverage-90%25-green)
 ![GitHub repo size](https://img.shields.io/github/repo-size/akshayupadhayay/online-calculator-assessment)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/akshayupadhayay/online-calculator-assessment?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/akshayupadhayay/online-calculator-assessment?color=yellow)
 ![GitHub last commit](https://img.shields.io/github/last-commit/akshayupadhayay/online-calculator-assessment?color=yellow)
 ![GitHub forks](https://img.shields.io/github/forks/akshayupadhayay/online-calculator-assessment?style=social)
 
